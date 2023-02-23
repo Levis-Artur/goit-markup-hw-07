@@ -42,6 +42,9 @@
   .quality-list {
     display: inline;
   }
+  .quality-items {
+    width: 356px;
+  }
   .text-title {
     font-weight: 700;
     font-size: 36px;
