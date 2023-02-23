@@ -133,4 +133,9 @@
   .logo-footer {
     margin: 0;
   }
+
+  .modal {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
