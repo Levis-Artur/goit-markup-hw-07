@@ -79,14 +79,15 @@
   .customers-list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 396px;
-    max-height: 520px;
     gap: 16px;
     padding-bottom: 128px;
+    padding-left: 24px;
   }
   .foot {
     display: grid;
     width: 428px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .cont-foot {
     display: grid;
@@ -103,9 +104,16 @@
     margin-right: auto;
     padding-bottom: 72px;
   }
+  .soc-text {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+  }
+
   .foot-link {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 72px;
   }
   .foot-list {
     margin-left: auto;
@@ -114,7 +122,15 @@
   .form-email-input {
     width: 396px;
   }
+  .form-email {
+  }
   .subscribe-input {
     display: inline;
+  }
+  .subscribe-btn {
+    margin: 16px 132px;
+  }
+  .logo-footer {
+    margin: 0;
   }
 }
