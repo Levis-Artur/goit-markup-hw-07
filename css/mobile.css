@@ -69,15 +69,15 @@
     padding-bottom: 128px;
   }
   .team {
-    width: 428px;
+    width: 425px;
   }
   .team-items {
-    width: 260px;
+    width: 264px;
     margin-left: auto;
     margin-right: auto;
   }
   .photo-mobile {
-    width: 260px;
+    width: 264px;
   }
   .customers-list {
     display: flex;
@@ -140,5 +140,17 @@
   .modal {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .mob-btn {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
   }
 }
