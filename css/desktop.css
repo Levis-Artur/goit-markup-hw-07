@@ -179,7 +179,7 @@ header {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/people-office\ 1.jpg);
+    url(../images/desk/hero/people-office_desk@1x.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -187,12 +187,27 @@ header {
   margin-right: auto;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desk/hero/people-office_desk@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
 .backdrop {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/people-office\ 1.jpg);
+    url(../images/desk/hero/people-office_desk@1x.jpg);
   background-repeat: no-repeat;
   text-align: center;
   width: 100%;
