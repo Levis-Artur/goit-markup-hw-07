@@ -5,6 +5,7 @@
   h3 {
     display: grid;
   }
+
   .section {
     padding-bottom: 0;
   }
@@ -143,8 +144,7 @@
   .form-email-input {
     width: 396px;
   }
-  .form-email {
-  }
+  
   .subscribe-input {
     display: inline;
   }
@@ -166,7 +166,47 @@
     }
   }
 
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: var(--white-color);
+    padding-left: 40px;
+    padding-top: 80px;
+  }
+
+  .mob-contacts {
+    margin-bottom: 48px;
+  }
+  .mob-nav {
+    margin-bottom: 284px;
+  }
+  .mob-menu-social {
+    display: flex;
+    gap: 56px;
+  }
+  
+
+  .mob-tel-style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: #4d5ae5;
+  }
+  .social-link {
+    background-color: #4d5ae5;
+  }
+
   .mob-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -176,5 +216,36 @@
     background-color: transparent;
     border: none;
     padding: 0;
+  }
+
+  /* стилі меню */
+
+  @media (min-width: 768px) {
+    .menu-container {
+      display: none;
+    }
+  }
+
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: var(--white-color);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .menu-container.is-open {
+    transform: translateX(0);
   }
 }

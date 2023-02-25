@@ -62,9 +62,94 @@
         >
           <svg class="menu-open-icon" width="32" height="22">
             <use href="./images/icons.svg#burger-icon"></use>
-            <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="modal-btn js-close-menu">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+
+          <ul class="mob-nav point">
+            <li>
+              <a class="menu-link point text-title" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="menu-link point text-title" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="menu-link point text-title" href="">Contacts</a></li>
+          </ul>
+
+          <ul class="mob-contacts point">
+            <li>
+              <a class="mob-tel-style point" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="text point" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mob-menu-social point">
+            <li class="mob-menu-soc-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social-link"
+                aria-label="Instagram link"
+              >
+                <svg class="social-links" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="social-link"
+                aria-label="Twitter link"
+              >
+                <svg class="social-links" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-twt"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="social-link"
+                aria-label="Facebook link"
+              >
+                <svg class="social-links" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="social-link"
+                aria-label="Linkedin link"
+              >
+                <svg class="social-links" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-ld"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -736,6 +821,7 @@
     <!-- footer -->
     <!-- Footer Logo -->
     <footer class="foot">
+      -->
       <div class="container cont-foot">
         <div class="logo-footer">
           <a class="logo-foot point" href="#"
@@ -746,7 +832,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <!-- Footer Social Links -->
+          <!-- Footer Social Links -->
         <div class="foot-link">
           <p class="soc-text">Social media</p>
           <ul class="foot-list">
@@ -823,7 +909,7 @@
         </div>
       </div>
     </footer>
-    <!-- modal window -->
+
     <div data-modal class="backdrop-modal is-hidden">
       <div class="modal">
         <button data-modal-close class="modal-btn" type="button">

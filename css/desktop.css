@@ -168,6 +168,12 @@ header {
   margin-right: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
 /* hero */
 
 .hero {
