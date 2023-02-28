@@ -176,7 +176,6 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--link-color);
-  display: flex;
 }
 
 .contact-link {
@@ -414,7 +413,6 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--link-color);
-    display: flex;
   }
 
   .contact-link {
@@ -677,6 +675,18 @@ header {
     font-weight: 400;
   }
 }
+@media screen and (max-width: 1200px) {
+  .quality h3 {
+    font-weight: 700;
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .quality h3 {
+    text-align: left;
+  }
+}
 
 .section-title {
   font-size: 36px;
@@ -894,7 +904,7 @@ header {
   max-width: 268px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 16px;
+  margin-bottom: 72px;
   line-height: 1.5;
   color: var(--footerlogo-bcg-color);
 }
@@ -910,9 +920,8 @@ header {
   color: var(--white-color);
   margin-bottom: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: calc(24 / 16);
   list-style: none;
-  float: left;
 }
 
 .footer-text {
@@ -934,21 +943,12 @@ header {
 }
 
 .social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.social-links {
   fill: var(--white-color);
   background-color: var(--link-color);
+  display: flex;
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   justify-content: center;
   align-items: center;
   transition-duration: 250ms;
@@ -963,12 +963,12 @@ header {
 
 .subscribe-input {
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .form-email {
-  width: 100$;
+  width: 100%;
 }
 
 .form-email-input {
@@ -1000,6 +1000,7 @@ header {
   gap: 16px;
   min-width: 165px;
   padding: 8px 24px;
+  margin-top: 14px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -1021,24 +1022,26 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .logo-foot,
-  .footer-text {
+  .logo-foot {
     text-align: start;
   }
 
-  .foot {
+  .cont-foot {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
   }
 
-  .footer-text {
+  .logo-footer {
     max-width: 264px;
     margin-left: 0;
     margin-right: 24px;
   }
 
-  .social-link {
+  .soc-text {
+    text-align: start;
+  }
+  .foot-link {
     margin-bottom: 0;
   }
 
@@ -1046,33 +1049,13 @@ header {
     align-items: baseline;
   }
 
-  .soc-text {
-    text-align: start;
-  }
-
   .form-email {
     margin-right: 24px;
     width: 264px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .foot {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  .cont-foot {
-    flex-wrap: nowrap;
-  }
-
-  .logo-footer {
-    margin-right: 120px;
-    margin-bottom: 0;
-  }
-
-  .foot-link {
-    margin-right: 80px;
+  .subscribe.soc-text {
+    text-align: start;
   }
 }
 
