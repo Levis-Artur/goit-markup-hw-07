@@ -9,24 +9,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/desktop.css" />
-    <link rel="stylesheet" href="./css/tablet.css" />
-    <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- header -->
     <header>
       <div class="container header-div">
         <a class="logo point" href="./index.html"
           >Web<span class="header-logo">Studio</span></a
         >
-        <nav class="nav mobile-hide">
+        <nav class="nav">
           <ul class="menu-list">
             <li class="menu-items point">
               <a class="menu-link current point" href="./index.html">Studio</a>
@@ -39,7 +36,7 @@
             </li>
           </ul>
         </nav>
-        <address class="contact mobile-hide">
+        <address class="contact">
           <ul class="contact-list">
             <li class="contact-items point">
               <a class="contact-link point" href="mailto:info@devstudio.com"
@@ -74,26 +71,22 @@
 
           <ul class="mob-nav point">
             <li>
-              <a class="menu-link point text-title" href="./index.html"
-                >Studio</a
-              >
+              <a class="menu-link point" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="menu-link point text-title" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="menu-link point" href="./portfolio.html">Portfolio</a>
             </li>
-            <li><a class="menu-link point text-title" href="">Contacts</a></li>
+            <li><a class="menu-link point" href="">Contacts</a></li>
           </ul>
 
           <ul class="mob-contacts point">
-            <li>
+            <li class="mob-contacts-tel">
               <a class="mob-tel-style point" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
-            <li>
-              <a class="text point" href="mailto:info@devstudio.com"
+            <li class="mob-contacts-email">
+              <a class="mob-email-style point" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
@@ -104,10 +97,10 @@
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
-                class="social-link"
+                class="mob-social-link"
                 aria-label="Instagram link"
               >
-                <svg class="social-links" width="24px" height="24px">
+                <svg class="mob-social-links" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-inst"></use>
                 </svg>
               </a>
@@ -116,10 +109,10 @@
               <a
                 href="https://twitter.com/"
                 target="_blank"
-                class="social-link"
+                class="mob-social-link"
                 aria-label="Twitter link"
               >
-                <svg class="social-links" width="24px" height="24px">
+                <svg class="mob-social-links" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-twt"></use>
                 </svg>
               </a>
@@ -128,10 +121,10 @@
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
-                class="social-link"
+                class="mob-social-link"
                 aria-label="Facebook link"
               >
-                <svg class="social-links" width="24px" height="24px">
+                <svg class="mob-social-links" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-fb"></use>
                 </svg>
               </a>
@@ -140,10 +133,10 @@
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
-                class="social-link"
+                class="mob-social-link"
                 aria-label="Linkedin link"
               >
-                <svg class="social-links" width="24px" height="24px">
+                <svg class="mob-social-links" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-ld"></use>
                 </svg>
               </a>
@@ -153,7 +146,6 @@
       </div>
     </header>
     <main>
-      <!-- hero -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -162,54 +154,54 @@
           </button>
         </div>
       </section>
-      <!-- quality -->
+
       <section class="section quality">
         <div class="container">
           <ul class="quality-list">
             <li class="quality-items point">
-              <div class="svg mobile-hide tab-hide">
+              <div class="svg">
                 <svg class="quality-img" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3 class="text-title quality-title">Strategy</h3>
-              <p class="text">
+              <p class="quality-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
             <li class="quality-items point">
-              <div class="svg mobile-hide tab-hide">
+              <div class="svg">
                 <svg class="quality-img" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="text-title quality-title">Punctuality</h3>
-              <p class="text">
+              <p class="quality-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
             <li class="quality-items point">
-              <div class="svg mobile-hide tab-hide">
+              <div class="svg">
                 <svg class="quality-img" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="text-title quality-title">Diligence</h3>
-              <p class="text">
+              <p class="quality-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
             <li class="quality-items point">
-              <div class="svg mobile-hide tab-hide">
+              <div class="svg">
                 <svg class="quality-img" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="text-title quality-title">Technologies</h3>
-              <p class="text">
+              <p class="quality-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -217,8 +209,8 @@
           </ul>
         </div>
       </section>
-      <!-- specialization -->
-      <section class="section specialization mobile-hide tab-hide">
+
+      <section class="section specialization">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="specialization-list point">
@@ -249,7 +241,7 @@
           </ul>
         </div>
       </section>
-      <!-- team -->
+
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
@@ -767,7 +759,7 @@
           </ul>
         </div>
       </section>
-      <!-- customers -->
+
       <section class="section customers">
         <div class="container">
           <h2 class="section-title">Customers</h2>
@@ -818,10 +810,8 @@
         </div>
       </section>
     </main>
-    <!-- footer -->
-    <!-- Footer Logo -->
+
     <footer class="foot">
-      -->
       <div class="container cont-foot">
         <div class="logo-footer">
           <a class="logo-foot point" href="#"
@@ -832,7 +822,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-          <!-- Footer Social Links -->
+
         <div class="foot-link">
           <p class="soc-text">Social media</p>
           <ul class="foot-list">
@@ -886,7 +876,7 @@
             </li>
           </ul>
         </div>
-        <!-- Footer Subscribe -->
+
         <div class="subscribe">
           <p class="soc-text">Subscribe</p>
           <form class="subscribe-input">
